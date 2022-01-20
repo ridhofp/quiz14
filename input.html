@@ -1,0 +1,48 @@
+<title>Tugas </title>
+<h5>Ridho Fitra Palasa - 2110059</h5>
+<h3>Form Pendaftaran Mahasiswa</h3>
+<form action="">
+<p id="namaa">
+    Nama : <input type="text" id="nama">
+</p>
+
+<p id="jenis">
+   <label>Jenis kelamin:
+            <label><input type="radio" id="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+            <label><input type="radio" id="jenis_kelamin" value="perempuan" /> Perempuan</label>
+        </label>
+ </p>
+
+<p id="prodii">
+    <label>Prodi :</label>
+    <select id="prodi">
+        <option value=" Teknik Informatika">Teknik Informatika</option>
+        <option value="Sistem Informasi">Sistem Informasi</option>
+       
+    </select>
+</p>
+<p id="hoby">
+    Hobby:
+    <input type="checkbox" id="hobi1" value="coding"> coding
+    <input type="checkbox" id="hobi2" value="jalanjalan" > jalan jalan
+    <input type="checkbox" id="hobi3" value="makan"> makan
+
+    <button onclick="displayName()">Simpan</button>
+    
+  
+ </body>
+ <script>
+    function displayName() {
+       var name = document.getElementById("nama").value;
+       document.getElementById("namaa").innerHTML = "Nama :" + name;
+
+       var kelamin = document.getElementById("jenis_kelamin").value;
+       document.getElementById("jenis").innerHTML = "Jenis Kelamin :" + kelamin;
+
+       var prodi = document.getElementById("prodi").value;
+       document.getElementById("prodii").innerHTML = "Jurusan :" + prodi;
+
+       var hobi = document.getElementById("hobi1").value;
+       document.getElementById("hoby").innerHTML = "Hobby :" + hobi;
+    }
+    </script>
